@@ -663,8 +663,8 @@ export class GenericBehavior extends Behavior implements OptionsBehavior {
   }
 
   public first(): void {
-    if (this.actor._active.length > 0) {
-        this.actor.activeOption = this.actor._active[0];
+    if (this.actor.active.length > 0) {
+        this.actor.activeOption = this.actor.active[0];
     } else {
         this.actor.activeOption = this.actor.options[0];
     }
